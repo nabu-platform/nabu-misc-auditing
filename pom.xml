@@ -5,7 +5,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>nabu.misc</groupId>
 	<artifactId>auditing</artifactId>
-	<version>1.0</version>
+	<version>${nabu.misc-auditing-version}</version>
 	<name>auditing</name>
 	
 	<parent>

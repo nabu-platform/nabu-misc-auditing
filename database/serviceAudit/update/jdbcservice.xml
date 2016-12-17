@@ -1,0 +1,16 @@
+<jdbcService xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<inputDefinition>nabu.misc.auditing.types.model.audit.ServiceAudit</inputDefinition>
+	<sql>update service_audits set
+	modified = :modified,
+	run_id = :runId,
+	audit_type = :auditType,
+	parent_id = :parentId,
+	user_name = :userName,
+	realm = :realm,
+	name = :name,
+	started = :started,
+	stopped = :stopped,
+	error_code = :errorCode,
+	error_log = :errorLog
+ where id = :id</sql>
+</jdbcService>

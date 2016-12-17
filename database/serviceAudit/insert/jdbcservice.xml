@@ -1,0 +1,32 @@
+<jdbcService xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<inputDefinition>nabu.misc.auditing.types.model.audit.ServiceAudit</inputDefinition>
+	<sql>insert into service_audits (
+	id,
+	created,
+	modified,
+	run_id,
+	audit_type,
+	parent_id,
+	user_name,
+	realm,
+	name,
+	started,
+	stopped,
+	error_code,
+	error_log
+) values (
+	:id,
+	:created,
+	:modified,
+	:runId,
+	:auditType,
+	:parentId,
+	:userName,
+	:realm,
+	:name,
+	:started,
+	:stopped,
+	:errorCode,
+	:errorLog
+)</sql>
+</jdbcService>

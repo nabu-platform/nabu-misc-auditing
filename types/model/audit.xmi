@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8' ?>
-<XMI xmi.version = '1.2' xmlns:UML = 'org.omg.xmi.namespace.UML' timestamp = 'Sat Dec 17 12:04:40 CET 2016'>
+<XMI xmi.version = '1.2' xmlns:UML = 'org.omg.xmi.namespace.UML' timestamp = 'Sat Dec 17 13:12:27 CET 2016'>
   <XMI.header>    <XMI.documentation>
       <XMI.exporter>ArgoUML (using Netbeans XMI Writer version 1.0)</XMI.exporter>
       <XMI.exporterVersion>0.34(6) revised on $Date: 2010-01-11 22:20:14 +0100 (Mon, 11 Jan 2010) $ </XMI.exporterVersion>
@@ -45,7 +45,7 @@
               </UML:StructuralFeature.type>
             </UML:Attribute>
             <UML:Attribute xmi.id = '127-0-1-1-223de6d:1590c6ebfe5:-8000:0000000000000D95'
-              name = 'parent' visibility = 'public' isSpecification = 'false' ownerScope = 'instance'
+              name = 'parentId' visibility = 'public' isSpecification = 'false' ownerScope = 'instance'
               changeability = 'changeable' targetScope = 'instance'>
               <UML:StructuralFeature.multiplicity>
                 <UML:Multiplicity xmi.id = '127-0-1-1-223de6d:1590c6ebfe5:-8000:0000000000000DBC'>
@@ -55,8 +55,17 @@
                   </UML:Multiplicity.range>
                 </UML:Multiplicity>
               </UML:StructuralFeature.multiplicity>
+              <UML:ModelElement.taggedValue>
+                <UML:TaggedValue xmi.id = '127-0-1-1-223de6d:1590c6ebfe5:-8000:0000000000000DC0'
+                  isSpecification = 'false'>
+                  <UML:TaggedValue.dataValue>Should point to another service audit entry but the link is not direct because if you only log on stop, the parent does not exist yet when the child is inserted</UML:TaggedValue.dataValue>
+                  <UML:TaggedValue.type>
+                    <UML:TagDefinition xmi.idref = '127-0-1-1-223de6d:1590c6ebfe5:-8000:0000000000000DBD'/>
+                  </UML:TaggedValue.type>
+                </UML:TaggedValue>
+              </UML:ModelElement.taggedValue>
               <UML:StructuralFeature.type>
-                <UML:Class xmi.idref = '127-0-1-1-223de6d:1590c6ebfe5:-8000:0000000000000D8E'/>
+                <UML:DataType href = 'http://argouml.org/user-profiles/baseTypes.xmi#be.nabu.uml.xmi:base:types:0000000000000029'/>
               </UML:StructuralFeature.type>
             </UML:Attribute>
             <UML:Attribute xmi.id = '127-0-1-1-223de6d:1590c6ebfe5:-8000:0000000000000D98'
@@ -195,6 +204,17 @@
             </UML:Attribute>
           </UML:Classifier.feature>
         </UML:Class>
+        <UML:TagDefinition xmi.id = '127-0-1-1-223de6d:1590c6ebfe5:-8000:0000000000000DBD'
+          name = 'documentation' isSpecification = 'false'>
+          <UML:TagDefinition.multiplicity>
+            <UML:Multiplicity xmi.id = '127-0-1-1-223de6d:1590c6ebfe5:-8000:0000000000000DBF'>
+              <UML:Multiplicity.range>
+                <UML:MultiplicityRange xmi.id = '127-0-1-1-223de6d:1590c6ebfe5:-8000:0000000000000DBE'
+                  lower = '0' upper = '0'/>
+              </UML:Multiplicity.range>
+            </UML:Multiplicity>
+          </UML:TagDefinition.multiplicity>
+        </UML:TagDefinition>
       </UML:Namespace.ownedElement>
     </UML:Model>
   </XMI.content>

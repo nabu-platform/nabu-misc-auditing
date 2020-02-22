@@ -1,0 +1,14 @@
+<structure name="report">
+    <field name="service" type="java.lang.String"/>
+    <field minOccurs="0" name="serviceContext" type="java.lang.String"/>
+    <field minOccurs="0" name="correlationId" type="java.lang.String"/>
+    <field name="runId" pattern="[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}|[0-9a-fA-F]{32}" type="java.util.UUID"/>
+    <field name="instanceId" pattern="[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}|[0-9a-fA-F]{32}" type="java.util.UUID"/>
+    <field name="started" type="java.util.Date"/>
+    <field minOccurs="0" name="stopped" type="java.util.Date"/>
+    <field minOccurs="0" name="alias" type="java.lang.String"/>
+    <field minOccurs="0" name="realm" type="java.lang.String"/>
+    <field minOccurs="0" name="deviceId" type="java.lang.String"/>
+    <structure definition="nabu.misc.auditing.provider.report.auditReport" maxOccurs="unbounded" minOccurs="0" name="children"/>
+    <structure definition="nabu.utils.types.ExceptionSummary" minOccurs="0" name="exception"/>
+</structure>

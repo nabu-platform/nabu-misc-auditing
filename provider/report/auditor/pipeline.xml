@@ -1,0 +1,10 @@
+<structure interface="be.nabu.eai.module.auditing.api.FlatServiceTracker.track" name="pipeline">
+    <structure name="input">
+        <field name="handler" type="java.lang.String"/>
+    </structure>
+    <structure name="output"/>
+    <structure definition="nabu.misc.auditing.provider.report.auditReport" maxOccurs="unbounded" name="reports"/>
+    <structure definition="nabu.misc.auditing.provider.report.auditReport" name="report"/>
+    <structure definition="nabu.misc.auditing.provider.report.auditReport" name="current"/>
+    <field minOccurs="0" name="size" type="java.lang.Integer"/>
+</structure>

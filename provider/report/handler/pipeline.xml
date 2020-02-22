@@ -1,0 +1,6 @@
+<structure name="pipeline">
+    <structure name="input">
+        <structure definition="nabu.misc.auditing.provider.report.auditReport" name="report"/>
+    </structure>
+    <structure name="output"/>
+</structure>

@@ -62,15 +62,6 @@
 		</steps>
 		<steps xsi:type="be.nabu.libs.services.vm.step.Link"
 				disabled="false"
-				id="83ebaca8-775b-4cfa-9eff-675ed7331959"
-				mask="false"
-				optional="false"
-				fixedValue="false">
-			<from>input/token/name</from>
-			<to>audit/userName</to>
-		</steps>
-		<steps xsi:type="be.nabu.libs.services.vm.step.Link"
-				disabled="false"
 				id="d08522f8-f96f-4e19-b808-aed3606d5478"
 				mask="false"
 				optional="false"
@@ -133,6 +124,24 @@
 				fixedValue="false">
 			<from>result6cea2476e0844ebda4f51391eef993a9/element</from>
 			<to>audit/parentId</to>
+		</steps>
+		<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+				disabled="false"
+				id="f088f736-f692-4bd8-bbb3-2ec110f0f6f6"
+				mask="false"
+				optional="false"
+				fixedValue="false">
+			<from>input/token/name</from>
+			<to>audit/alias</to>
+		</steps>
+		<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+				disabled="false"
+				id="1f26b108-3a66-4598-ac8b-ec306166b6fe"
+				mask="false"
+				optional="false"
+				fixedValue="false">
+			<from>input/device/deviceId</from>
+			<to>audit/deviceId</to>
 		</steps>
 	</steps>
 	<steps xsi:type="be.nabu.libs.services.vm.step.Sequence"

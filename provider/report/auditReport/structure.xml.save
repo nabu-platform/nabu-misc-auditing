@@ -9,8 +9,6 @@
     <field minOccurs="0" name="alias" type="java.lang.String"/>
     <field minOccurs="0" name="realm" type="java.lang.String"/>
     <field minOccurs="0" name="deviceId" type="java.lang.String"/>
-    <structure definition="java.lang.Object" minOccurs="0" name="input"/>
-    <structure definition="java.lang.Object" minOccurs="0" name="output"/>
-    <structure definition="nabu.misc.auditing.provider.report.auditReport" maxOccurs="unbounded" minOccurs="0" name="children"/>
+    <structure definition="test.impl.auditReport" maxOccurs="unbounded" minOccurs="0" name="children"/>
     <structure definition="nabu.utils.types.ExceptionSummary" minOccurs="0" name="exception"/>
 </structure>

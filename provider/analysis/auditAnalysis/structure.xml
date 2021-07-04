@@ -1,0 +1,16 @@
+<structure name="analysis">
+    <field comment="The id of this instance" name="id" pattern="[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}|[0-9a-fA-F]{32}" type="java.util.UUID"/>
+    <field comment="The id of the entire run" name="rootId" pattern="[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}|[0-9a-fA-F]{32}" type="java.util.UUID"/>
+    <field comment="The id of the service that is being run" name="serviceId" type="java.lang.String"/>
+    <field comment="The id of this invocation step. &#10;For instance an invoke statement in a specific vm service has a unique id, you can compare it to all other instances of that particular invoke.&#10;This allows for complex analysis." minOccurs="0" name="invokeId" type="java.lang.String"/>
+    <field name="started" type="java.util.Date"/>
+    <field minOccurs="0" name="stopped" type="java.util.Date"/>
+    <field minOccurs="0" name="errorCode" type="java.lang.String"/>
+    <field minOccurs="0" name="errogLog" type="java.lang.String"/>
+    <field minOccurs="0" name="deviceId" type="java.lang.String"/>
+    <field minOccurs="0" name="alias" type="java.lang.String"/>
+    <field minOccurs="0" name="realm" type="java.lang.String"/>
+    <field comment="If this run is correlated to another run (local or remote)" minOccurs="0" name="correlationId" type="java.lang.String"/>
+    <field comment="The path of this invocation, this allows for quick partial lookups" name="path" type="java.lang.String"/>
+    <field comment="The version of the service being run" minOccurs="0" name="version" type="java.lang.String"/>
+</structure>

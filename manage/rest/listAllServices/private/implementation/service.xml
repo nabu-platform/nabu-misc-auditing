@@ -1,0 +1,38 @@
+<sequence xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		disabled="false"
+		id="d7d40b60-8cc2-4478-832a-45b97cd96641">
+	<steps xsi:type="be.nabu.libs.services.vm.step.Map"
+			disabled="false"
+			id="f7af6974-1dea-4db9-be91-c611517e8274">
+		<steps xsi:type="be.nabu.libs.services.vm.step.Invoke"
+				disabled="false"
+				id="ea754bad-a716-492e-8033-37d6e469c088"
+				serviceId="nabu.utils.reflection.Node.listByType"
+				resultName="result83691364a406414b9fab1881d2cd144e"
+				temporaryMapping="true"
+				x="89"
+				y="39"
+				invocationOrder="0"
+				asynchronous="false"
+				recache="false">
+			<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+					disabled="false"
+					id="7d781bf5-5337-4328-9a1f-f173c7dc16cf"
+					mask="false"
+					optional="false"
+					fixedValue="true">
+				<from>be.nabu.libs.services.api.DefinedService</from>
+				<to>type</to>
+			</steps>
+		</steps>
+		<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+				disabled="false"
+				id="a669c3dd-fb7d-47a2-a268-ae0aa0ae94b0"
+				mask="false"
+				optional="false"
+				fixedValue="false">
+			<from>result83691364a406414b9fab1881d2cd144e/nodes/id</from>
+			<to>output/content/services</to>
+		</steps>
+	</steps>
+</sequence>

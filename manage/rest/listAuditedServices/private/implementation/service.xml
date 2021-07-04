@@ -1,0 +1,29 @@
+<sequence xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		disabled="false"
+		id="d7d40b60-8cc2-4478-832a-45b97cd96641">
+	<steps xsi:type="be.nabu.libs.services.vm.step.Map"
+			disabled="false"
+			id="ade57769-e1d2-454c-8525-e289b7da3ba3">
+		<steps xsi:type="be.nabu.libs.services.vm.step.Invoke"
+				disabled="false"
+				id="f33acf7a-9e35-4c01-9820-c80aa9a88db1"
+				serviceId="nabu.misc.auditing.Services.listAudited"
+				resultName="resultca7851708eae476b94f8772ae66a441d"
+				temporaryMapping="true"
+				x="11"
+				y="61"
+				invocationOrder="0"
+				asynchronous="false"
+				recache="false">
+		</steps>
+		<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+				disabled="false"
+				id="e353feea-ffe3-42d7-8347-c417154b7c4e"
+				mask="false"
+				optional="false"
+				fixedValue="false">
+			<from>resultca7851708eae476b94f8772ae66a441d/auditedServices</from>
+			<to>output/content/services</to>
+		</steps>
+	</steps>
+</sequence>

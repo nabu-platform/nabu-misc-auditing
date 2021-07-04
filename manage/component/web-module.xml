@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<webModule>
+    <webFragments>nabu.misc.auditing.manage.rest.listAllServices</webFragments>
+    <webFragments>nabu.misc.auditing.manage.rest.listAuditServices</webFragments>
+    <webFragments>nabu.misc.auditing.manage.rest.listAuditedServices</webFragments>
+    <webFragments>nabu.misc.auditing.manage.rest.startAudit</webFragments>
+    <webFragments>nabu.misc.auditing.manage.rest.stopAudit</webFragments>
+</webModule>

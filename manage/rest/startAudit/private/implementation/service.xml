@@ -1,0 +1,53 @@
+<sequence xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		disabled="false"
+		id="6b2b1f01-2420-438d-b126-c4fed7376ffe">
+	<steps xsi:type="be.nabu.libs.services.vm.step.Map"
+			disabled="false"
+			id="b22feafd-a33a-4dcd-8f75-6eadfafaaacc"
+			label="input/content/auditor = null">
+		<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+				disabled="false"
+				id="4adbc1b1-0f6b-4c32-96a4-e85b55bc7c32"
+				mask="false"
+				optional="false"
+				fixedValue="true">
+			<from>nabu.misc.auditing.provider.report.auditor</from>
+			<to>input/content/auditor</to>
+		</steps>
+	</steps>
+	<steps xsi:type="be.nabu.libs.services.vm.step.Map"
+			disabled="false"
+			id="c0da7906-43ce-4dcc-b2a4-04407101e1ff">
+		<steps xsi:type="be.nabu.libs.services.vm.step.Invoke"
+				disabled="false"
+				id="1c4af2b3-1fcd-46c4-a938-b0ab4758cf67"
+				serviceId="nabu.misc.auditing.Services.auditService"
+				resultName="resultb951ea64a79c4e4d958a92f9467df0f3"
+				temporaryMapping="true"
+				x="129"
+				y="67"
+				invocationOrder="0"
+				target="$all"
+				asynchronous="false"
+				recache="false">
+			<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+					disabled="false"
+					id="17f9e199-951a-43df-b9ed-06fb8d36607d"
+					mask="false"
+					optional="false"
+					fixedValue="false">
+				<from>input/content/serviceToAudit</from>
+				<to>serviceId</to>
+			</steps>
+			<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+					disabled="false"
+					id="5dbe7aae-9aa4-4db0-8dbf-aea53f3b60cb"
+					mask="false"
+					optional="false"
+					fixedValue="false">
+				<from>input/content/auditor</from>
+				<to>auditServiceId</to>
+			</steps>
+		</steps>
+	</steps>
+</sequence>

@@ -1,4 +1,4 @@
-<structure collectionName="serviceReports" name="serviceReport">
+<structure collectionName="auditReports" name="auditReport">
     <field name="id" pattern="[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}|[0-9a-fA-F]{32}" primaryKey="true" type="java.util.UUID"/>
     <field name="service" type="java.lang.String"/>
     <field minOccurs="0" name="correlationId" type="java.lang.String"/>
@@ -8,6 +8,6 @@
     <field minOccurs="0" name="realm" type="java.lang.String"/>
     <field minOccurs="0" name="deviceId" type="java.lang.String"/>
     <field minOccurs="0" name="errorCode" type="java.lang.String"/>
-    <field minOccurs="0" name="errorLog" type="java.lang.String"/>
-    <field comment="Contains the full run report" name="details" type="java.lang.String"/>
+    <field maxLength="1000000" minOccurs="0" name="errorLog" type="java.lang.String"/>
+    <field comment="Contains the full run report" maxLength="1000000" name="details" type="java.lang.String"/>
 </structure>

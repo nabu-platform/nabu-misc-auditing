@@ -1,0 +1,6 @@
+<structure interface="be.nabu.eai.module.auditing.api.FlatServiceTracker.track" name="pipeline">
+    <structure name="input">
+        <field comment="If this is filled in, only log service invocations that are at the root or take longer than this amount." minOccurs="0" name="threshold" type="java.lang.Integer"/>
+    </structure>
+    <structure name="output"/>
+</structure>

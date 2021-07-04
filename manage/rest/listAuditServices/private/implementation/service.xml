@@ -1,0 +1,38 @@
+<sequence xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		disabled="false"
+		id="d7d40b60-8cc2-4478-832a-45b97cd96641">
+	<steps xsi:type="be.nabu.libs.services.vm.step.Map"
+			disabled="false"
+			id="f7af6974-1dea-4db9-be91-c611517e8274">
+		<steps xsi:type="be.nabu.libs.services.vm.step.Invoke"
+				disabled="false"
+				id="99af09a5-b798-4811-bce1-3953f750626f"
+				serviceId="nabu.utils.reflection.Service.listImplementations"
+				resultName="result9a1db8c7c0a74894b22dad9f6c441d59"
+				temporaryMapping="true"
+				x="99"
+				y="190"
+				invocationOrder="0"
+				asynchronous="false"
+				recache="false">
+			<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+					disabled="false"
+					id="e8371595-2953-4bf6-9179-8ca9f3b3b175"
+					mask="false"
+					optional="false"
+					fixedValue="true">
+				<from>be.nabu.eai.module.auditing.api.FlatServiceTracker.track</from>
+				<to>interfaceId</to>
+			</steps>
+		</steps>
+		<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+				disabled="false"
+				id="e1dfd776-b627-478a-b6a2-c3f5a65661ae"
+				mask="false"
+				optional="false"
+				fixedValue="false">
+			<from>result9a1db8c7c0a74894b22dad9f6c441d59/implementations/id</from>
+			<to>output/content/services</to>
+		</steps>
+	</steps>
+</sequence>

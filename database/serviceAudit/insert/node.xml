@@ -1,1 +1,13 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?><node artifactManager="be.nabu.eai.module.services.jdbc.JDBCServiceManager" lastModified="2016-12-17T12:06:18.789+01:00" leaf="true" version="2"><environmentId>hyperion</environmentId><properties/><references>java.lang.String</references><references>java.lang.Integer</references><references>java.lang.Boolean</references><references>nabu.misc.auditing.types.model.audit.ServiceAudit</references><references>be.nabu.libs.types.api.KeyValuePair</references><references>java.lang.Long</references></node>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<node artifactManager="be.nabu.eai.module.services.jdbc.JDBCServiceManager" deprecated="2023-01-26T09:31:26.887+01:00" lastModified="2016-12-17T12:06:18.789+01:00" leaf="true" version="2">
+    <environmentId>hyperion</environmentId>
+    <hidden>false</hidden>
+    <locked>false</locked>
+    <properties/>
+    <references>java.lang.String</references>
+    <references>java.lang.Integer</references>
+    <references>java.lang.Boolean</references>
+    <references>nabu.misc.auditing.types.model.audit.ServiceAudit</references>
+    <references>be.nabu.libs.types.api.KeyValuePair</references>
+    <references>java.lang.Long</references>
+</node>

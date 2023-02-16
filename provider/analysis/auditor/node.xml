@@ -1,1 +1,17 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?><node artifactManager="be.nabu.eai.module.services.vm.VMServiceManager" created="2020-06-05T19:48:21.105+02:00" lastModified="2020-06-05T19:55:42.273+02:00" leaf="true" version="5"><environmentId>apollo</environmentId><hidden>false</hidden><properties/><references>be.nabu.eai.module.auditing.api.FlatServiceTracker.track</references><references>be.nabu.eai.module.auditing.api.FlatServiceTracker$TrackType</references><references>java.util.Date</references><references>java.lang.Object</references><references>java.util.UUID</references><references>java.lang.String</references><references>be.nabu.libs.authentication.api.Device</references><references>be.nabu.libs.authentication.api.Token</references><references>java.lang.Integer</references><references>java.lang.Exception</references></node>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<node artifactManager="be.nabu.eai.module.services.vm.VMServiceManager" created="2020-06-05T19:48:21.105+02:00" deprecated="2023-01-26T09:31:49.961+01:00" lastModified="2020-06-05T19:55:42.273+02:00" leaf="true" version="5">
+    <environmentId>apollo</environmentId>
+    <hidden>false</hidden>
+    <locked>false</locked>
+    <properties/>
+    <references>be.nabu.eai.module.auditing.api.FlatServiceTracker.track</references>
+    <references>be.nabu.eai.module.auditing.api.FlatServiceTracker$TrackType</references>
+    <references>java.util.Date</references>
+    <references>java.lang.Object</references>
+    <references>java.util.UUID</references>
+    <references>java.lang.String</references>
+    <references>be.nabu.libs.authentication.api.Device</references>
+    <references>be.nabu.libs.authentication.api.Token</references>
+    <references>java.lang.Integer</references>
+    <references>java.lang.Exception</references>
+</node>
